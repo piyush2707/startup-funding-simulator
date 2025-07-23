@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Startup Funding Simulator</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+  <header class="header">
+    <h1 class="flying-text">✨ Designed by Piyush</h1>
+    <h2>Startup Funding Simulator</h2>
+    <p>Estimate your startup's funding potential based on real-world factors.</p>
+  </header>
+
+  <main>
+    <form id="fundingForm" data-aos="fade-up">
+      <label>Team Size: <input type="number" id="team" min="1" required /></label>
+      <label>Monthly Revenue ($): <input type="number" id="revenue" min="0" required /></label>
+      <label>Growth Rate (%): <input type="number" id="growth" min="0" required /></label>
+      <button type="submit">Predict Funding</button>
+    </form>
+
+    <div id="result" data-aos="zoom-in"></div>
+  </main>
+
+  <footer>
+    <p>📊 Made for frontend practice by Piyush Joshi</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
